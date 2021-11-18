@@ -50,7 +50,7 @@ class SMZDM_Bot(object):
 if __name__ == '__main__':
     sb = SMZDM_Bot()
     # sb.load_cookie_str(config.TEST_COOKIE)
-    cookies = os.environ["SMZDM_COOKIE"]
+    cookies = os.environ["COOKIES"]
     sb.load_cookie_str(cookies)
     res = sb.checkin()
     msg = "\n⭐⭐⭐签到成功{0}天⭐⭐⭐\n🏅🏅🏅金币[{1}]\n🏅🏅🏅积分[{2}]\n🏅🏅🏅经验[{3}],\n🏅🏅🏅等级[{4}]\n🏅🏅补签卡[{5}]".format(
